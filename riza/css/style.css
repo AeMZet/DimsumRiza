@@ -1,0 +1,425 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #f5f7fa;
+    color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 22px;
+    color: #000000;
+}
+.logo:hover{
+    color: #001aff;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+}
+
+.navbar .active {
+    color: #000000;
+    font-weight: bold;
+}
+.active:hover{
+    color: #001aff;
+}
+/* HERO */
+.hero {
+    min-height: 90vh;
+
+    /* BACKGROUND FOTO */
+    background:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url("../FOTO/dim.webp");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.heri{
+    min-height: 90vh;
+
+    /* BACKGROUND FOTO */
+    background:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url("../FOTO/3\(.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.hero-content {
+    max-width: 700px;
+}
+
+
+.badge {
+    background: white;
+    color: #000000;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin: 20px 0;
+}
+
+.highlight {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.highlight span {
+    background: rgba(255,255,255,0.2);
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 30px;
+    background: white;
+    color: #000000;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn:hover{
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 15px 35px rgba(250, 21, 21, 0.4);
+    background: #f81100;
+    color: #000;
+}
+.tentang{
+display: inline-block;
+    margin-top: 25px;
+    padding: 12px 30px;
+    background: white;
+    color: #000000;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.tentang:hover{
+      transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 15px 35px rgba(21, 166, 250, 0.4);
+    background: #009df8;
+    color: #000;
+}
+/* HARGA */
+.harga {
+     background:
+        linear-gradient(rgba(255, 255, 255, 0.466), rgba(255, 255, 255, 0.521)),
+        url("../FOTO/1\(.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 200px 40px;
+    text-align: center;
+}
+    
+.divider {
+    width: 80px;
+    height: 4px;
+    background: #ffffff;
+    margin: 15px auto 40px;
+    border-radius: 5px;
+}
+
+    .kotak {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #000, #1a1a1a);
+    color: #facc15;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+    transition: all 0.35s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.kotak:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 15px 35px rgba(250, 204, 21, 0.4);
+    background: #facc15;
+    color: #000;
+}
+.kotak:active {
+    transform: scale(0.97);
+}
+.kotak2 {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #000, #1a1a1a);
+    color: #ffffff;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+    transition: all 0.35s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.kotak2:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 15px 35px rgba(255, 255, 255, 0.4);
+    background: #ffffff;
+    color: #000;
+}
+.kotak2:active {
+    transform: scale(0.97);
+}
+    
+.white {
+    background: white;
+}
+
+.harga-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.card {
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+    width: 220px;
+    padding: 30px 20px;
+    border-radius: 18px;
+    color: #facc15;
+    box-shadow: 0 10px 30px rgba(250, 204, 21, 0.25);
+    transition: all 0.35s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 45px rgba(250, 204, 21, 0.45);
+}
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #facc15, #ffd700);
+}
+.card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 120%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,0.15),
+        transparent
+    );
+    transition: 0.6s;
+}
+
+.card:hover::after {
+    left: 120%;
+}
+
+
+.icon {
+    font-size: 30px;
+}
+
+.price {
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.best {
+    border: 2px solid #facc15;
+    box-shadow: 0 0 20px rgba(250, 204, 21, 0.4);
+}
+
+
+.label {
+    position: absolute;
+    top: 0;
+    right: 18px;
+    background: linear-gradient(135deg, #facc15, #ffd700);
+    color: #000;
+    padding: 6px 14px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    box-shadow: 0 6px 15px rgba(250, 204, 21, 0.5);
+}
+
+/* ORIGINAL */
+.original{
+     min-height: 90vh;
+
+    /* BACKGROUND FOTO */
+    background:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url("../FOTO/dimsum\ original.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+/* KEJU */
+.keju{
+    min-height: 90vh;
+
+    /* BACKGROUND FOTO */
+    background:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url("../FOTO/dimsum\ keju.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+/* CILI */
+.cili{
+ background:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url("../FOTO/dimsum\ chili\ oil.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 200px;
+}
+/* KONTAK */
+.kontak {
+    min-height: 80vh;
+    background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("../FOTO/2\(.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+    padding: 300px 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.kontak-content{
+    margin-bottom: 100px;
+}
+
+.ait{
+    color: #ffffff;
+}
+
+.kontak-box p {
+    margin: 20px 0;
+}
+.ait:hover{
+    color: #001aff;
+}
+.wa-gaul {
+    display: inline-block;
+    background: #25D366;
+    color: white;
+    padding: 14px 26px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.wa-gaul:hover {
+    background: #be1e1e;
+    transform: scale(1.05);
+}
+
+
+/* FOOTER */
+footer {
+    background: #000000;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 30px;
+}
+
+/* FOTO PRODUK BIAR PAS */
+.foto-produk {
+    width: 100%;
+    height: 160px;          /* tinggi foto seragam */
+    object-fit: cover;     /* potong rapi, tidak gepeng */
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
