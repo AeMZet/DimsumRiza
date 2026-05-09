@@ -1,0 +1,517 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #f5f7fa;
+    color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    font-size: 20px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 28px;
+    font-family: cursive;
+    color: #000000;
+}
+.logo:hover{
+    color: #001aff;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-family: cursive;
+}
+
+.navbar .active {
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+}
+/* HERO */
+.hero {
+    min-height: 90vh;
+
+    /* BACKGROUND FOTO */
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.747), rgba(0, 0, 0, 0.87)),
+        url("../FOTO/dim.webp");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.heri{
+    min-height: 90vh;
+
+    /* BACKGROUND FOTO */
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.747), rgba(0, 0, 0, 0.87)),
+        url("../FOTO/3\(.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.heri h1{
+font-size: 40px;
+font-family: cursive;
+}
+.heri p{
+    font-size: 20px;
+    text-align: justify;
+    font-weight: bold;
+    font-family: cursive;
+}
+.hero-content {
+    max-width: 700px;
+    text-align: center;
+}
+
+
+.badge {
+    background: white;
+    color: #000000;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin: 20px 0;
+    font-family: cursive;
+}
+.hero p{
+    font-size: 20px;
+    text-align: justify;
+    font-weight: bold;
+    font-family: cursive;
+}
+.highlight {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.highlight span {
+    background: rgba(255,255,255,0.2);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 30px;
+    background: white;
+    color: #000000;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 20px;
+}
+.btn:hover{
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    background: #000000;
+    color: #ffffff;
+}
+.tentang{
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 30px;
+    background: white;
+    color: #000000;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 20px;
+}
+.tentang:hover{
+      transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 15px 35px rgba(12, 12, 12, 0.4);
+    background: #000000;
+    color: #ffffff;
+}
+/* HARGA */
+.harga {
+     background:
+        linear-gradient(rgba(255, 255, 255, 0.466), rgba(255, 255, 255, 0.521)),
+        url("../FOTO/1\(.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 200px 40px;
+    text-align: center;
+}
+.harga h2{
+    font-size: 40px;
+    color: #000;
+    font-family: cursive;
+    font-weight: bold;
+}
+.harga h3{
+    font-size: 20px;
+    color: #ffffff;
+    font-family: cursive;
+    font-weight: bold;
+}
+.divider {
+    width: 80px;
+    height: 4px;
+    background: #ffffff;
+    margin: 15px auto 40px;
+    border-radius: 5px;
+}
+.foto-produk {
+    width: 100%;
+    height: 160px;          /* tinggi foto seragam */
+    object-fit: cover;     /* potong rapi, tidak gepeng */
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+    .kotak {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #000, #1a1a1a);
+    color: #facc15;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+    transition: all 0.35s ease;
+    position: relative;
+    overflow: hidden;
+    font-family: cursive;
+    font-size: 20px;
+}   
+
+.kotak:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 15px 35px rgba(250, 204, 21, 0.4);
+    background: #facc15;
+    color: #000;
+}
+.kotak:active {
+    transform: scale(0.97);
+}
+.kotak2 {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #000, #1a1a1a);
+    color: #ffffff;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+    transition: all 0.35s ease;
+    position: relative;
+    overflow: hidden;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+.kotak2:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 15px 35px rgba(255, 255, 255, 0.4);
+    background: #ffffff;
+    color: #000;
+}
+.kotak2:active {
+    transform: scale(0.97);
+}
+    
+.white {
+    background: white;
+}
+
+.harga-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.card {
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+    width: 220px;
+    padding: 30px 20px;
+    border-radius: 18px;
+    color: #facc15;
+    box-shadow: 0 10px 30px rgba(250, 204, 21, 0.25);
+    transition: all 0.35s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 45px rgba(250, 204, 21, 0.45);
+}
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #facc15, #ffd700);
+}
+.card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 120%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(238, 255, 0, 0.15),
+        transparent
+    );
+    transition: 0.6s;
+}
+
+.card:hover::after {
+    left: 120%;
+}
+
+
+.icon {
+    font-size: 30px;
+}
+
+.price {
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.best {
+    border: 2px solid #facc15;
+    box-shadow: 0 0 20px rgba(250, 204, 21, 0.4);
+}
+
+
+.label {
+    position: absolute;
+    top: 0;
+    right: 18px;
+    background: linear-gradient(135deg, #facc15, #ffd700);
+    color: #000;
+    padding: 6px 14px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    box-shadow: 0 6px 15px rgba(250, 204, 21, 0.5);
+    font-family: cursive;
+}
+
+/* ORIGINAL */
+.original{
+     min-height: 90vh;
+
+    /* BACKGROUND FOTO */
+    background:
+       linear-gradient(rgba(0, 0, 0, 0.747), rgba(0, 0, 0, 0.87)),
+        url("../FOTO/dimsum\ original.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.original h1{
+    font-size: 40px;
+    font-family: cursive;
+}
+.original p{
+    font-size: 20px;
+    text-align: justify;
+    font-weight: bold;
+    font-family: cursive;
+}
+/* KEJU */
+.keju{
+    min-height: 90vh;
+
+    /* BACKGROUND FOTO */
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.747), rgba(0, 0, 0, 0.87)),
+        url("../FOTO/dimsum\ keju.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.keju h1{
+    font-size: 40px;
+    font-family: cursive;
+}
+.keju p{
+    font-size: 20px;
+    text-align: justify;
+    font-weight: bold;
+    font-family: cursive;
+}
+/* CILI */
+.cili{
+ background:
+        linear-gradient(rgba(0, 0, 0, 0.747), rgba(0, 0, 0, 0.87)),
+        url("../FOTO/dimsum\ chili\ oil.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 200px;
+}
+.cili h1{
+    font-size: 40px;
+    font-family: cursive;
+}
+.cili p{
+    font-size: 20px;
+    text-align: justify;
+    font-weight: bold;
+    font-family: cursive;
+}
+/* KONTAK */
+.kontak {
+    min-height: 80vh;
+    background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("../FOTO/2\(.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+    padding: 300px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.kontak p{
+    font-size: 20px;
+}
+.kontak h2{
+    font-size: 40px;
+}
+.kontak-content{
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.ait{
+    color: #ffffff;
+}
+
+.map-box {
+    margin-top: 20px;
+    background: #000000;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(136, 129, 129, 0.24);
+    border: 1px solid #000000;
+}
+
+.map-box iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 30px;
+}
+.kontak-box p {
+    margin: 20px 0;
+}
+.ait:hover{
+    color: #001aff;
+}
+.wa-gaul {
+    display: inline-block;
+    background: #25D366;
+    color: white;
+    padding: 14px 26px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.wa-gaul:hover {
+    background: #be1e1e;
+    transform: scale(1.05);
+}
+
+
+/* FOOTER */
+footer {
+    background: #000000;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 30px;
+}
+
+
